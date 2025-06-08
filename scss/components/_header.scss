@@ -1,0 +1,44 @@
+header{ 
+    height: 300px;
+    background-color: rgba(128, 24, 18, 0.823);
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header img{
+    margin: 20px 20px 10px 20px;
+    width: 300px;
+    height: 300px;
+}
+
+
+header h1{
+    color: white;
+    font-style:normal;
+    font-size: 100px;
+    font-weight: 400;
+    text-align: start;
+}
+
+
+header nav ul li{
+    margin: 10px;
+    display: inline-block;
+    justify-content: right;
+}
+
+header nav ul a{
+    border-left-style: solid;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+header nav ul a:hover{
+    color: black;
+}
