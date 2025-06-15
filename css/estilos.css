@@ -24,60 +24,224 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 header img {
-  margin: 20px 20px 10px 20px;
+  margin: 30px -20px 0px 60px;
   width: 300px;
   height: 300px;
 }
-
 header h1 {
   color: white;
   font-style: normal;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 400;
   text-align: start;
 }
-
 header nav ul li {
   margin: 10px;
   display: inline-block;
   justify-content: right;
 }
-
-header nav ul a {
+header a {
   border-left-style: solid;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   text-decoration: none;
 }
-
-header nav ul a:hover {
+header:hover {
   color: black;
 }
 
-.header {
-  height: 300px;
-  background-color: rgba(128, 24, 18, 0.823);
+.seccion-inicio {
+  background-color: rgba(245, 245, 220, 0.534);
+}
+
+.div-contenedor {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: start;
-  flex-direction: column;
   flex-wrap: wrap;
 }
-.header img {
-  margin: 20px 20px 10px 20px;
+.div-contenedor div {
   width: 300px;
-  height: 300px;
+  height: 400px;
+  border: 3px solid black;
+  margin: 10px;
+  text-align: center;
 }
-.header h1 {
+.div-contenedor img {
+  border: 3px solid black;
+  width: 100%;
+  height: 220px;
+}
+
+iframe {
+  margin: 20px;
+  border: 2px solid black;
+}
+
+section div div {
+  background-color: white;
+}
+section div h3 {
+  font-size: 25px;
+}
+
+.seccion-mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.ayuda img {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  height: 70px;
+  width: 70px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(128, 24, 18);
   color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.boton:hover {
+  background-color: #000000;
+}
+
+.seccion-museo {
+  background-color: rgba(255, 255, 255, 0.866);
+  flex-wrap: wrap;
+}
+.seccion-museo h2 {
+  padding: 20px;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+.seccion-museo p {
+  margin: 0px 100px;
+  padding: 20px;
+  font-size: 22px;
+  text-align: center;
   font-style: normal;
-  font-size: 100px;
-  font-weight: 400;
-  text-align: start;
+}
+
+.contenedor-escolares {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 200px 100px 1948px 820px;
+  grid-template-areas: "header header header" "nav nav nav" "aside main main" "footer footer footer";
+}
+
+.header-escolares {
+  grid-area: header;
+  border: 1px solid black;
+}
+
+.nav-escolares {
+  grid-area: nav;
+}
+
+.main-escolares {
+  grid-area: main;
+  border: 1px solid black;
+}
+
+.aside-escolares {
+  grid-area: aside;
+  border: 1px solid black;
+}
+.aside-escolares div {
+  height: 1948px;
+  width: 310px;
+}
+.aside-escolares img {
+  height: 1948px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-escolares {
+  grid-area: footer;
+  border: 1px solid black;
+}
+
+.seccion-escolares {
+  background-color: rgba(255, 255, 255, 0.866);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.seccion-escolares ul li {
+  margin: 0px 100px;
+  padding: 10px 200px 0px 50px;
+  font-size: 25px;
+  font-style: normal;
+}
+.seccion-escolares ul p {
+  margin: 0px 100px;
+  padding: 30px 0px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.grid-exhibiciones {
+  background-color: rgba(245, 245, 220, 0.534);
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px 350px 350px 350px;
+  gap: 20px;
+}
+.grid-exhibiciones div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.866);
+  border: 2px solid black;
+  position: relative;
+  margin: 20px;
+}
+.grid-item h3 {
+  position: absolute;
+  bottom: 0;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.779);
+  padding: 10px;
+  width: 100%;
+}
+
+.section-visita {
+  background-color: rgba(255, 255, 255, 0.866);
+  height: 900px;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.titulo-seccion-visita {
+  text-align: center;
+  font-style: oblique;
+  font-size: 30px;
 }
 
 footer {
@@ -88,33 +252,26 @@ footer {
   align-items: start;
   flex-wrap: wrap;
 }
-
 footer div h2 {
   border-bottom: 1px solid white;
-  padding: 0px 0px 10px 0px;
+  padding-bottom: 10px;
   color: white;
-  font-size: 25px;
+  font-size: 22px;
 }
-
-footer div li {
+footer li {
   margin: 10px;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
-
-footer div p {
+footer p, footer a {
   color: white;
   font-size: 20px;
   text-decoration: none;
 }
-
-footer div a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
+footer a:hover {
+  color: black;
 }
-
-.imagenfooter {
+footer .imagenfooter {
   width: 30px;
   height: 30px;
 }

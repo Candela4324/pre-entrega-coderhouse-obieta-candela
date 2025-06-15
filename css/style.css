@@ -31,7 +31,7 @@ header{
 }
 
 header img{
-    margin: 20px 20px 10px 20px;
+    margin: 30px -20px 0px 60px;
     width: 300px;
     height: 300px;
 }
@@ -40,7 +40,7 @@ header img{
 header h1{
     color: white;
     font-style:normal;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 400;
     text-align: start;
 }
@@ -56,7 +56,7 @@ header nav ul a{
     border-left-style: solid;
     padding: 0px 10px 0px 10px;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     text-decoration: none;
 }
@@ -73,6 +73,10 @@ header nav ul a:hover{
 
 section div div{
     background-color: white;
+}
+
+section div div h3{
+    font-size: 25px;
 }
 
 .seccion-inicio .div-contenedor{
@@ -116,6 +120,21 @@ section div div{
     width: 70px;
 }
 
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(128, 24, 18); 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    }
+
+.boton:hover {
+    background-color: #000000;
+}
+
 /*!-----------------------FOOTER---------------------------*/
 
 footer{
@@ -132,13 +151,13 @@ footer div h2{
     border-bottom: 1px solid white;
     padding: 0px 0px 10px 0px;
     color: white;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 footer div li{
     margin: 10px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 footer div p{
@@ -151,6 +170,10 @@ footer div a{
     color: white;
     font-size: 20px;
     text-decoration: none;
+}
+
+footer a:hover{
+    color: black;
 }
 
 
@@ -169,7 +192,7 @@ footer div a{
 
 .seccion-museo h2{
     padding: 20px;
-    font-size: 40px;
+    font-size:30px;
     font-style: italic;
     text-align: center;
 }
@@ -178,7 +201,7 @@ footer div a{
     margin: 0px 100px 0px 100px;
     padding: 10px 200px 0px 50px;
     padding: 20px;
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
     font-style: normal;
 }
@@ -190,7 +213,7 @@ footer div a{
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 200px 100px 2420px 820px;
+    grid-template-rows: 200px 100px 1948px 820px;
     grid-template-areas: 
     "header header header"
     "nav nav nav"
@@ -219,12 +242,12 @@ footer div a{
 }
 
 .aside-escolares div{
-    height: 2420px;
+    height: 1948px;
     width: 310px;
 }
 
 .aside-escolares div img{
-    height: 2420px;
+    height: 1948px;
     width: 100%;
     object-fit: cover;  
 }
@@ -245,7 +268,7 @@ footer div a{
 .seccion-escolares ul li{
     margin: 0px 100px 0px 100px;
     padding: 10px 200px 0px 50px; 
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
 
 }
@@ -253,7 +276,7 @@ footer div a{
 .seccion-escolares ul p{
     margin: 0px 100px 0px 100px;
     padding: 30px 0px 30px 0px;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
 }
 
@@ -265,14 +288,15 @@ footer div a{
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 400px 400px 400px 400px;
-    gap: 50px;
+    grid-template-rows: 350px 350px 350px 350px;
+    gap: 20px;
 }
 
 .grid-item{
     background-color: rgba(255, 255, 255, 0.866);
     border: 2px solid black;
     position: relative;
+    margin: 20px 20px 20px 20px;
 }
 
 .grid-exhibiciones div img{
@@ -292,9 +316,15 @@ footer div a{
 
 /*!-------------PAGINA VISITA-----------------*/
 
-.carousel{
+.section-visita{
     background-color:rgba(255, 255, 255, 0.866);
+    height: 900px;
 }
+
+.carousel{
+    margin-bottom: 20px;
+}
+
 
 .carousel-inner{
     width: 80%;
@@ -304,531 +334,8 @@ footer div a{
 .titulo-seccion-visita{
     text-align: center;
     font-style: oblique;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 /*!-----------------MEDIA QUERIES------------------*/
 
-@media screen and (max-width: 1380px) {
-    header h1{
-    color: white;
-    font-style:normal;
-    font-size: 80px;
-    font-weight: 400;
-    text-align: start;
-    }
-
-.contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 200px 100px 2490px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "aside main main"
-    "footer footer footer"
-    ;
-}
-
-.aside-escolares div{
-    height: 2490px;
-    width: 310px;
-}
-
-.aside-escolares div img{
-    height: 2490px;
-    width: 100%;
-    object-fit: cover;  
-}
-}
-
-@media screen and (max-width: 1257px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 2150px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-.aside-escolares div{
-    display: none;
-}
-
-.aside-escolares div img{
-    display: none;
-}
-}
-
-@media screen and (max-width: 1175px) {
-    header h1{
-    color: white;
-    font-style:normal;
-    font-size: 60px;
-    font-weight: 400;
-    text-align: start;
-}
-header nav ul a{
-    border-left-style: solid;
-    padding: 0px 10px 0px 10px;
-    color: white;
-    font-size: 20px;
-    font-style: normal;
-    text-decoration: none;
-}
-}
-
-@media screen and (max-width: 1150px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 2180px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-
-}
-
-@media screen and (max-width: 1134px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 2215px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-}
-
-@media screen and (max-width: 1110px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 2250px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-}
-
-@media screen and (max-width: 1058px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 2285px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-}
-
-@media screen and (max-width: 1046px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 2285px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-}
-
-@media screen and (max-width: 1033px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 1830px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-
-.seccion-escolares ul li{
-    margin: 0px 100px 0px 100px;
-    padding: 10px 200px 0px 50px; 
-    font-size: 25px;
-    font-style: normal;
-}
-
-.seccion-escolares ul p{
-    margin: 0px 100px 0px 100px;
-    padding: 30px 0px 30px 0px;
-    font-size: 20px;
-    font-style: normal;
-}
-
-.footer-escolares h2{
-    font-size: 25px;
-}
-.footer-escolares li{
-    font-size: 20px;
-}
-}
-
-@media screen and (max-width: 1006px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 1980px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-
-.seccion-escolares ul li{
-    margin: 0px 100px 0px 100px;
-    padding: 10px 50px 0px 50px; 
-    font-size: 25px;
-    font-style: normal;
-}
-
-.seccion-escolares ul p{
-    margin: 0px 100px 0px 100px;
-    padding: 30px 0px 30px 0px;
-    font-size: 22px;
-    font-style: normal;
-}
-
-.footer-escolares h2{
-    font-size: 25px;
-    padding: 0px;
-    margin: 0px;
-}
-.footer-escolares li{
-    font-size: 20px;
-    padding: 10px 0px 10px 0px;
-    margin: 0px;
-}
-}
-
-
-@media screen and (max-width: 995px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 150px 2040px 700px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-
-.seccion-escolares ul li{
-    margin: 0px 100px 0px 100px;
-    padding: 10px 200px 0px 50px; 
-    font-size: 25px;
-    font-style: normal;
-}
-
-.seccion-escolares ul p{
-    margin: 0px 100px 0px 100px;
-    padding: 30px 0px 30px 0px;
-    font-size: 22px;
-    font-style: normal;
-}
-
-.footer-escolares h2{
-    font-size: 21px;
-    margin: 0px 10px 0px 10px;
-    padding: 10px 0px 10px 0px;
-}
-.footer-escolares li{
-    font-size: 17px;
-    margin: 0px 10px 0px 10px;
-    padding: 10px 0px 10px 0px;
-}
-}
-
-@media screen and (max-width: 988px) {
-    header{ 
-    height: 200px;
-}
-    header h1{
-    color: white;
-    font-style:normal;
-    font-size: 50px;
-    font-weight: 400;
-    text-align: start;
-}
-header nav ul a{
-    border-left-style: solid;
-    padding: 0px 10px 0px 10px;
-    color: white;
-    font-size: 20px;
-    font-style: normal;
-    text-decoration: none;
-}
-header img{
-    margin: 100px 20px 0px 20px;
-    width: 220px;
-    height: 210px;
-}
-}
-
-@media screen and (max-width: 958px) {
-    .grid-exhibiciones{
-    background-color:rgba(245, 245, 220, 0.534);
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 400px 400px 400px 400px;
-    gap: 50px;
-}
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 150px 1790px 800px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-
-.seccion-escolares ul li{
-    margin: 10px 80px 10px 80px;
-    padding: 10px 50px 10px 50px; 
-    font-size: 25px;
-    font-style: normal;
-}
-
-.seccion-escolares ul p{
-    margin: 10px 80px 10px 80px;
-    padding: 0px;
-    font-size: 22px;
-    font-style: normal;
-    border: 1px solid black;
-}
-
-.footer-escolares{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-}
-
-@media screen and (max-width: 939px) {
-.seccion-escolares ul li{
-    margin: 10px 70px 10px 70px;
-    padding: 10px 50px 10px 50px; 
-    font-size: 25px;
-    font-style: normal;
-}
-
-.seccion-escolares ul p{
-    margin: 10px 70px 10px 70px;
-    padding: 0px;
-    font-size: 22px;
-    font-style: normal;
-    border: 1px solid black;
-}
-}
-
-@media screen and (max-width: 919px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 150px 1575px 800px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-.seccion-escolares ul li{
-    margin: 0px;
-    padding: 0px; 
-    font-size: 25px;
-    font-style: normal;
-}
-
-.seccion-escolares ul p{
-    margin: 10px 70px 10px 70px;
-    padding: 0px;
-    font-size: 22px;
-    font-style: normal;
-    border: 1px solid black;
-}
-}
-
-@media screen and (max-width: 897px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 150px 1365px 800px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-    .seccion-escolares ul li{
-    margin: 0px;
-    padding: 0px; 
-    font-size: 22px;
-    font-style: normal;
-    text-align: center;
-}
-
-.seccion-escolares ul p{
-    margin: 10px 60px 10px 60px;
-    padding: 0px;
-    font-size: 20px;
-    font-style: normal;
-    border: 1px solid black;
-    text-align: center;
-}
-}
-
-@media screen and (max-width: 885px){
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 150px 1280px 800px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-    .seccion-escolares ul li{
-    margin: 0px;
-    padding: 0px; 
-    font-size: 20px;
-    font-style: normal;
-    text-align: center;
-}
-
-.seccion-escolares ul p{
-    margin: 10px 60px 10px 60px;
-    padding: 0px;
-    font-size: 18px;
-    font-style: normal;
-    border: 1px solid black;
-    text-align: center;
-}
-.footer-escolares h2{
-    font-size: 20px;
-}
-}
-
-
-@media screen and (max-width: 841px) {
-    .contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 150px 1280px 1100px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-    .footer-escolares{
-    align-items: center;
-}
-
-    header{ 
-    height: 300px;
-    background-color: rgba(128, 24, 18, 0.823);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-    header h1{
-    display: none;
-}
-header img{
-    margin: 10px 10px 0px 10px;
-    width: 220px;
-    height: 210px;
-}
-footer{
-    flex-direction: column;
-}
-    footer div h2{
-    font-size: 20px;
-}
-    footer div li{
-    font-size: 20px;
-}
-
-    .seccion-museo h2{
-    padding: 20px;
-    font-size: 30px;
-    font-style: italic;
-    text-align: center;
-}
-
-    .seccion-museo p{
-    margin: 0px 70px 0px 70px;
-    padding: 10px 200px 0px 50px;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    font-style: normal;
-}
-}
-
-@media screen and (max-width: 510px) {
-    .seccion-museo h2{
-    padding: 20px;
-    font-size: 25px;
-    font-style: italic;
-    text-align: center;
-}
-
-.seccion-museo p{
-    margin: 0px 20px 0px 20px;
-    padding: 10px 50px 0px 50px;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    font-style: normal;
-}
-}
-
-@media screen and (max-width: 841px){
-    .grid-exhibiciones{
-    background-color:rgba(245, 245, 220, 0.534);
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr;
-    grid-template-rows: 450px 450px 450px 450px;
-    gap: 50px;
-}
-}
