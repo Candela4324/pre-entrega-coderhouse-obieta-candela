@@ -75,12 +75,16 @@ flex-wrap: wrap;
     text-align: center;
     }
     p{
-    margin: 0px 100px;
-    padding: 20px;
+    margin: 0px 100px 0px 100px;
+    padding: 10px 0px 0px 50px;
     font-size: 22px;
     text-align: center;
     font-style: normal;
     }
+    .seccion-museo{
+    background-color: rgba(255, 255, 255, 0.866);
+    flex-wrap: wrap;
+}
 }
 
 /*!------------PAGINA ESCOLARES------------*/
