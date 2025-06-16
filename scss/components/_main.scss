@@ -1,3 +1,4 @@
+/*!--------------------PRIMERA SECCION-----------------------*/
 .seccion-inicio{
 background-color: rgba(245, 245, 220, 0.534);
 }
@@ -28,6 +29,7 @@ section{
     div{
         div{
         background-color: white
+        
         }
         h3{
         font-size: 25px
@@ -62,7 +64,7 @@ font-weight: bold;
     }
 }
 
-
+/*!--------------PAGINA MUSEO----------------*/
 .seccion-museo{
 background-color: rgba(255, 255, 255, 0.866);
 flex-wrap: wrap;
@@ -81,6 +83,7 @@ flex-wrap: wrap;
     }
 }
 
+/*!------------PAGINA ESCOLARES------------*/
 .contenedor-escolares{
 display: grid;
 flex-wrap: wrap;
@@ -109,11 +112,11 @@ border: 1px solid black;
     div{
     height: 1948px;
     width: 310px;
-    }
     img{
     height: 1948px;
     width: 100%;
     object-fit: cover;
+    }
     }
 }
 
@@ -144,6 +147,7 @@ align-items: center;
     }
 }
 
+/*!---------------PAGINA EXHIBICIONES---------------*/  
 .grid-exhibiciones{
 background-color: rgba(245, 245, 220, 0.534);
 display: grid;
@@ -175,6 +179,7 @@ margin: 20px;
     }
 }
 
+/*!-------------PAGINA VISITA-----------------*/
 .section-visita{
 background-color: rgba(255, 255, 255, 0.866);
 height: 900px;

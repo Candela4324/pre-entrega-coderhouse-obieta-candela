@@ -1,5 +1,5 @@
 //*? COMENTARIO 
-
+/*!-------------------------HEADER-------------------------*/
 header{
     height: 300px;
     background-color: rgba(128, 24, 18, 0.823);
@@ -27,8 +27,6 @@ header{
         display: inline-block;
         justify-content: right;
     }
-    }
-    }
     a{
         border-left-style: solid;
         padding: 0px 10px;
@@ -36,8 +34,11 @@ header{
         font-size: 25px;
         font-style: normal;
         text-decoration: none;
-    }
     &:hover{
         color: black;
     }
+    }
+    }
+    }
+    
 }
