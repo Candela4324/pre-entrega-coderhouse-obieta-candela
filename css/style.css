@@ -36,7 +36,6 @@ header img{
     height: 300px;
 }
 
-
 header h1{
     color: white;
     font-style:normal;
@@ -45,14 +44,13 @@ header h1{
     text-align: start;
 }
 
-
-header nav ul li{
+.navbar div ul li{
     margin: 10px;
     display: inline-block;
     justify-content: right;
 }
 
-header nav ul a{
+.navbar-brand, .nav-item, .navbar div ul li a{
     border-left-style: solid;
     padding: 0px 10px 0px 10px;
     color: white;
@@ -61,8 +59,13 @@ header nav ul a{
     text-decoration: none;
 }
 
-header nav ul a:hover{
+.navbar div ul li a:hover{
     color: black;
+}
+
+.navbar-toggler {
+    color: white;
+    background-color: snow;
 }
 
 /*!--------------------PRIMERA SECCION-----------------------*/
@@ -192,7 +195,7 @@ footer a:hover{
 .seccion-museo h2{
     padding: 20px;
     font-size:30px;
-    font-style: italic;
+    font-style: normal;
     text-align: center;
 }
 
@@ -204,6 +207,21 @@ footer a:hover{
     font-style: normal;
 }
 
+.accordion-button {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: rgba(128, 24, 18, 0.823);
+}
+
+.texto-barra{
+    font-size: 20px;
+    font-style: none;
+    font-weight: normal;
+}
 
 /*!------------PAGINA ESCOLARES------------*/
 
@@ -295,6 +313,11 @@ footer a:hover{
     border: 2px solid black;
     position: relative;
     margin: 20px 20px 20px 20px;
+    transition: 0.5s;
+}
+
+.grid-exhibiciones .grid-item:hover{
+    transform: scale(1.1);
 }
 
 .grid-exhibiciones div img{
@@ -311,6 +334,7 @@ footer a:hover{
     padding: 10px;
     width: 100%;
 }
+
 
 /*!-------------PAGINA VISITA-----------------*/
 

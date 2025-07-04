@@ -37,21 +37,34 @@ header h1 {
   font-weight: 400;
   text-align: start;
 }
-header nav ul li {
+header .navbar div ul li {
   margin: 10px;
   display: inline-block;
   justify-content: right;
 }
-header nav ul a {
+header .navbar div ul li a {
   border-left-style: solid;
-  padding: 0px 10px;
+  padding: 0px 10px 0px 10px;
   color: white;
   font-size: 25px;
   font-style: normal;
   text-decoration: none;
 }
-header nav ul a:hover {
+header .navbar div ul li a:hover {
   color: black;
+}
+header .navbar-brand,
+header .nav-item {
+  border-left-style: solid;
+  padding: 0px 10px 0px 10px;
+  color: white;
+  font-size: 25px;
+  font-style: normal;
+  text-decoration: none;
+}
+header .navbar-toggler {
+  color: white;
+  background-color: snow;
 }
 
 /*!--------------------PRIMERA SECCION-----------------------*/
@@ -130,11 +143,28 @@ section div h3 {
   text-align: center;
 }
 .seccion-museo p {
-  margin: 0px 100px;
-  padding: 20px;
+  margin: 0px 100px 0px 100px;
+  padding: 10px 0px 0px 50px;
   font-size: 22px;
   text-align: center;
   font-style: normal;
+}
+.seccion-museo .seccion-museo {
+  background-color: rgba(255, 255, 255, 0.866);
+  flex-wrap: wrap;
+}
+.seccion-museo .accordion-button {
+  font-size: 20px;
+  font-weight: 600;
+}
+.seccion-museo .texto-barra {
+  font-size: 20px;
+  font-style: none;
+  font-weight: normal;
+}
+.seccion-museo .accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: rgba(128, 24, 18, 0.823);
 }
 
 /*!------------PAGINA ESCOLARES------------*/
@@ -208,25 +238,28 @@ section div h3 {
   grid-template-rows: 350px 350px 350px 350px;
   gap: 20px;
 }
-.grid-exhibiciones div img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.grid-item {
+.grid-exhibiciones .grid-item {
   background-color: rgba(255, 255, 255, 0.866);
   border: 2px solid black;
   position: relative;
   margin: 20px;
+  transition: 0.5s;
 }
-.grid-item h3 {
+.grid-exhibiciones .grid-item:hover {
+  transform: scale(1.1);
+}
+.grid-exhibiciones .grid-item h3 {
   position: absolute;
   bottom: 0;
   font-size: 25px;
   background-color: rgba(255, 255, 255, 0.779);
   padding: 10px;
   width: 100%;
+}
+.grid-exhibiciones .grid-item div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*!-------------PAGINA VISITA-----------------*/
