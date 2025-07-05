@@ -576,6 +576,7 @@ header nav ul a{
 .seccion-museo p{
     font-size: 20px;
 }
+
 .grid-item h3{
     font-size: 20px;
 }
@@ -823,6 +824,16 @@ footer div a{
     margin: 10px;
     padding: 0px;
 }
+.accordion-button {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.texto-barra{
+    font-size: 15px;
+    font-style: none;
+    font-weight: normal;
+}
 .seccion-escolares ul li{
     margin: 0px 10px 0px 30px;
     padding: 10px; 
@@ -969,6 +980,15 @@ footer div a{
     font-size: 12px
 }
 }
+.accordion-button {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.texto-barra{
+    font-size: 12px;
+}
+
 
 @media screen and (max-width: 668px) {
 .contenedor-escolares{
@@ -1307,6 +1327,17 @@ header nav ul a{
     "footer footer footer"
     ;
 }
+
+.accordion-button {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.texto-barra{
+    font-size: 10px;
+    font-style: none;
+    font-weight: normal;
+}
 }
 
 @media screen and (max-width: 413px) {
@@ -1400,20 +1431,6 @@ header nav ul a{
 }
 .seccion-escolares ul li{
     margin: 0px;
-}
-}
-
-@media screen and (max-width: 383px) {
-.contenedor-escolares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 1020px 790px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
 }
 }
 
